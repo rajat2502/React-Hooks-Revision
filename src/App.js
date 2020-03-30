@@ -1,19 +1,23 @@
 import React from "react";
 
 import "./App.css";
-import ComponentA from "./components/ComponentA";
+// import DataFetching1 from "./components/DataFetching1";
+import DataFetching2 from "./components/DataFetching2";
 
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+// import ComponentA from "./components/ComponentA";
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value="Rajat">
+      {/* <DataFetching1 /> */}
+      <DataFetching2 />
+      {/* <UserContext.Provider value="Rajat">
         <ChannelContext.Provider value="rajat2502">
           <ComponentA />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
     </div>
   );
 }
