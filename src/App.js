@@ -1,19 +1,14 @@
 import React from "react";
 
 import "./App.css";
-import ComponentA from "./components/ComponentA";
-
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+import FocusInput from "./components/FocusInput";
+import HookTimer from "./components/HookTimer";
 
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value="Rajat">
-        <ChannelContext.Provider value="rajat2502">
-          <ComponentA />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      {/* <FocusInput /> */}
+      <HookTimer />
     </div>
   );
 }
