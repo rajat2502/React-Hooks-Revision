@@ -1,19 +1,20 @@
 import React from "react";
 
 import "./App.css";
-import ComponentA from "./components/ComponentA";
-
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+import UserForm from "./components/UserForm";
+// import DocTitle1 from "./components/DocTitle1";
+// import DocTitle2 from "./components/DocTitle2";
+// import Counter1 from "./components/Counter1";
+// import Counter2 from "./components/Counter2";
 
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value="Rajat">
-        <ChannelContext.Provider value="rajat2502">
-          <ComponentA />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      {/* <DocTitle1 />
+      <DocTitle2 /> */}
+      {/* <Counter1 />
+      <Counter2 /> */}
+      <UserForm />
     </div>
   );
 }
